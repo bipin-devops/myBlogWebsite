@@ -1,4 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 const cmsToken = process.env.GRAPHCMS_TOKEN;
