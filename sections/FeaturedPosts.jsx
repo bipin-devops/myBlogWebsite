@@ -35,7 +35,7 @@ const FeaturedPosts = () => {
     });
   }, []);
 
-  const customLeftArrow = (
+  const CustomLeftArrow = () => (
     <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const FeaturedPosts = () => {
     </div>
   );
 
-  const customRightArrow = (
+  const CustomRightArrow = () => (
     <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +77,8 @@ const FeaturedPosts = () => {
     <div className="mb-8">
       <Carousel
         infinite
-        customLeftArrow={customLeftArrow}
-        customRightArrow={customRightArrow}
+        customLeftArrow={<CustomLeftArrow />}
+        customRightArrow={<CustomRightArrow />}
         responsive={responsive}
         itemClass="px-4"
       >
